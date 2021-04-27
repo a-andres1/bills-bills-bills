@@ -27,10 +27,6 @@ There's also some Heroku issues going on with the routing which I am trying to w
 - Mongoose
 - MongoDB  
 
-## Install
-
-## Usage
-
 
 ## Credits
 Thanks for your help, Deepali Gaarg!

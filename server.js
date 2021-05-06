@@ -5,7 +5,7 @@ const compression = require("compression");
 const uri = process.env.MONGODB_URI;
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb+srv://a-andres1:JaGuaR2008@cluster0.xzkiu.mongodb.net/budget?retryWrites=true&w=majority',
+  process.env.MONGODB_URI || 'mongodb+srv://a-andres1:root@cluster0.xzkiu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
